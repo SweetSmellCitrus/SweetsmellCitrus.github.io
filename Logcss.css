@@ -12,6 +12,9 @@ body{
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 }
+h1{
+	text-align: center;
+}
 span{
 	color: red;
 	font-size: 12px;
