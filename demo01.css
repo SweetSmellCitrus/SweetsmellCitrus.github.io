@@ -1,0 +1,172 @@
+/* h1{
+	text-align: center;
+	color: aqua;
+} */
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+#img{
+	margin-top: 70px;
+	padding: 0px;
+	text-align: center;
+}
+#flag{
+	width: 500px;
+}
+html {
+     background: url(img/1.jpg);
+     background-size: 160px 400px;
+     margin: 0;
+     padding: 0;
+     font-family: Poppins, sans-serif;
+     box-sizing: border-box;
+ }
+ 
+ nav {
+     display: flex;
+     justify-content: center;
+     /* justify-content 用于设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式 */
+     align-items: center;
+     width: 97vw;
+     /*视口宽度的百分之97 */
+     margin: 0;
+     padding: 0;
+     box-sizing: content-box;
+ }
+ 
+ nav:after {
+     color: white;
+     position: fixed;
+     bottom: 0;
+     z-index: -5;
+ }
+ 
+ nav>ul {
+     display: flex;
+ }
+ 
+ nav>ul>li {
+     width: 150px;
+     height: 150px;
+     position: relative;
+     border-radius: 50%;
+     list-style-type: none;
+     background: white;
+     animation: move 35s linear infinite;
+     cursor: pointer;
+     margin-bottom: 75px;
+     transition: .5s all;
+ }
+ 
+ nav>ul>li:nth-child(1) {
+     background: url(img/2.jpg);
+     box-shadow: inset -10px -10px 40px rgba(52, 115, 105, 0.5), 0 0 60px -20px rgba(131, 191, 103, 0.72), -10px -10px 40px -10px rgba(131, 191, 103, 0.23);
+ }
+ 
+ nav>ul>li:nth-child(1):after {
+     content: "";
+     background: url(img/1.jpg);
+     width: 150px;
+     height: 150px;
+     position: absolute;
+     border-radius: 50%;
+     animation: move 30s infinite linear;
+     opacity: 0.4;
+ }
+ 
+ nav>ul>li:nth-child(2) {
+     background: url(img/3.jpg);
+     box-shadow: inset -10px -10px 40px rgba(194, 104, 48, 0.5), 0 0 60px -20px rgba(194, 104, 48, 0.72), -10px -10px 40px -10px rgba(194, 104, 48, 0.23);
+ }
+ 
+ nav>ul>li:nth-child(3) {
+     background: url(img/4.jpg);
+     box-shadow: inset -10px -10px 40px rgba(255, 183, 138, 0.5), 0 0 60px -20px rgba(255, 183, 138, 0.72), -10px -10px 40px -10px rgba(255, 183, 138, 0.23);
+ }
+ 
+ nav>ul>li:nth-child(4) {
+     background: url(img/5.jpg);
+     box-shadow: inset -10px -10px 40px rgba(255, 209, 181, 0.5), 0 0 60px -20px rgba(255, 209, 181, 0.72), -10px -10px 40px -10px rgba(255, 209, 181, 0.23);
+ }
+ 
+ nav>ul>li:nth-child(5) {
+     background: url(img/6.jpg);
+     box-shadow: inset -10px -10px 40px rgba(120, 253, 255, 0.5), 0 0 60px -20px rgba(120, 253, 255, 0.72), -10px -10px 40px -10px rgba(120, 253, 255, 0.23);
+ }
+ 
+ nav>ul>li:hover {
+     transform: scale(1.2);
+     margin: 0px 50px;
+ }
+ 
+ nav>ul>li:hover a {
+     color: white;
+ }
+ 
+ nav>ul>li>a {
+     color: white;
+     z-index: 10;
+     text-decoration: inherit;
+     position: absolute;
+     bottom: -50px;
+     font-size: 30px;
+     left: 50%;
+     transform: translateX(-25%) rotateZ(60deg);
+ }
+ 
+ li>ul {
+     position: absolute;
+     transform: rotateZ(60deg);
+     bottom: -150px;
+     right: -110px;
+     width: 300px;
+ }
+ 
+ li>ul>li {
+     list-style-type: none;
+     position: relative;
+     display: flex;
+ }
+ 
+ li>ul>li>a {
+     color: rgba(255, 255, 255, 0);
+     z-index: 10;
+     text-decoration: inherit;
+     transition: .2s all;
+ }
+ 
+ li>ul>li>a:hover {
+     color: #969696;
+ }
+ footer{
+	 
+	 text-align: center;
+	 color: #FFFFFF;
+	 margin-top: 100px;
+	 font-size: large;
+ }
+ @keyframes move {
+      0% {
+          background-position: 0 0;
+      }
+      100% {
+          background-position: -600px 0;
+      }
+  }
+/* nav{
+	background-color: azure;
+	margin: 10px 10px 0px 10px;
+}
+nav ul{
+	font-size:25px;
+	text-align: center;
+	margin: 0px;
+	list-style-type: none;
+	padding: 5px 0px 5px 0px;
+}
+nav ul li{
+	display: inline;
+	padding: 10px 10px 10px 10px;
+	font-family: "arial, helvetica, sans-serif";
+} */
+/* a{
+	text-decoration: none;
+} */
